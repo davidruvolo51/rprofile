@@ -12,9 +12,13 @@ R Setup in vscode
 There are two functions that I often use: `clear` (removes all objects in the environment) and `library2` (quietly loads packages).
 
 ```r
-# clear removes all objects except `clear` and `library2`
+# clear: clear the active terminal
 clear()
 
-# use library2 to quietly load packages
+# rm2: removes everything in the current session except `clear`, `library2`, and `rm2`
+rm2()
+
+# library2: quietly load packages by default
 library2("tidyverse")
+
 ```
