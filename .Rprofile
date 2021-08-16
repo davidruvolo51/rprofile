@@ -3,7 +3,7 @@
 #' AUTHOR: David Ruvolo
 #' CREATED: 2021-07-29
 #' MODIFIED: 2021-07-29
-#' PURPOSE: my Rprofile
+#' PURPOSE: workspace/session configurations and useful functions
 #' STATUS: working; ongoing
 #' PACKAGES: NA
 #' COMMENTS: optimized for radian, vscode R
@@ -33,11 +33,21 @@ options(
 )
 
 
-#' @title Clear Environment
+#' @title Clear
 #' @name clear
+#' @description clear the active terminal
+#' @noRD
+clear <- function() {
+    cmds <- list("unix" = "clear", "windows" = "cls")
+    system(cmds[[.Platform$OS.type]])
+}
+
+
+#' @title Remove2
+#' @name rm2
 #' @description Force remove all objects from the current environment
 #' @noRd
-clear <- function() {
+rm2 <- function() {
     ignore <- c("clear", "library2")
     rm(list = setdiff(ls(envir = .GlobalEnv), ignore), envir = .GlobalEnv)
 }
