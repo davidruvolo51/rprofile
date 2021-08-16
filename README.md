@@ -22,3 +22,25 @@ rm2()
 library2("tidyverse")
 
 ```
+
+## Install
+
+You can use this setup in other projects. There are few things you will need to change before you get started. First, clone this repository and change the remotes. 
+
+```zsh
+git clone https://github.com/davidruvolo51/rprofile/
+git remotes origin <new-remote>
+```
+
+Second, rename &mdash; or remove &mdash; the vscode workspace file
+
+```zsh
+mv rprofile.code-workspace <new-filename>
+```
+
+Lastly, restore the renv and update packages accordingly.
+
+```r
+renv::restore()
+renv::update()
+```
