@@ -1,6 +1,6 @@
 # rprofile
 
-This repo contains the Rprofile file that I often use across various projects. This configuration is optimized for R and vscode setups, but it can be used in other situations. If you `renv`, make sure the file is sourced last.
+This repo contains the `.Rprofile` and `.lintr` files that I often use across various projects. This configuration is optimized for R and vscode setups, but it can be used in other situations. If you `renv`, make sure the file is sourced last.
 
 R Setup in vscode
 
