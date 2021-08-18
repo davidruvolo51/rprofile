@@ -43,15 +43,6 @@ clear <- function() {
 }
 
 
-#' @title Remove2
-#' @name rm2
-#' @description Force remove all objects from the current environment
-#' @noRd
-rm2 <- function() {
-    ignore <- c("clear", "library2")
-    rm(list = setdiff(ls(envir = .GlobalEnv), ignore), envir = .GlobalEnv)
-}
-
 #' @title Quietly Load Package
 #' @name library2
 #' @description suppress messages when loading a package
@@ -59,6 +50,18 @@ rm2 <- function() {
 #' @noRd
 library2 <- function(pkg) {
     suppressPackageStartupMessages(library(pkg, character.only = TRUE))
+}
+
+
+#' @title Remove2
+#' @name rm2
+#' @description Force remove all objects from the current environment
+#' @param except optional an array of object names to ignore
+#' @noRd
+rm2 <- function(except = NULL) {
+    ignore <- c("clear", "library2", "rm2")
+    if (!is.null(except)) ignore <- c(ignore, except)
+    rm(list = setdiff(ls(envir = .GlobalEnv), ignore), envir = .GlobalEnv)
 }
 
 # start renv: make sure this is always last!
