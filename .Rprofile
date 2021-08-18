@@ -3,10 +3,10 @@
 #' AUTHOR: David Ruvolo
 #' CREATED: 2021-07-29
 #' MODIFIED: 2021-07-29
-#' PURPOSE: workspace/session configurations and useful functions
+#' PURPOSE: workspace configurations and useful functions for vscode+R env
 #' STATUS: working; ongoing
 #' PACKAGES: NA
-#' COMMENTS: optimized for radian, vscode R
+#' COMMENTS: https://github.com/davidruvolo51/rprofile
 #' ////////////////////////////////////////////////////////////////////////////
 
 # set options
