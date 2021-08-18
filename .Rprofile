@@ -17,6 +17,7 @@ options(
     shiny.launch.browser = FALSE,
 
     # options: radian
+    radian.insert_new_line = FALSE,
     radian.prompt = "\033[0;34m>\033[0m ",
 
     # options: vscode R
