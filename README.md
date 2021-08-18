@@ -17,6 +17,7 @@ clear()
 
 # rm2: removes everything in the current session except `clear`, `library2`, and `rm2`
 rm2()
+rm2(except = c("someObjectName", "anotherObjectName"))
 
 # library2: quietly load packages by default
 library2("tidyverse")
