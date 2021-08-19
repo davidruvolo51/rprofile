@@ -28,14 +28,14 @@ library2("tidyverse")
 
 You can use this setup in other projects. There are few things you will need to change before you get started. First, clone this repository and change the remotes. 
 
-```zsh
+```shell
 git clone https://github.com/davidruvolo51/rprofile/
 git remotes origin <new-remote>
 ```
 
 Second, rename &mdash; or remove &mdash; the vscode workspace file
 
-```zsh
+```shell
 mv rprofile.code-workspace <new-filename>
 ```
 
@@ -48,7 +48,7 @@ renv::update()
 
 ### Alternatively, curl files.
 
-```zsh
+```shell
 mkdir renv
 curl -O https://raw.githubusercontent.com/davidruvolo51/rprofile/main/.Rprofile
 curl -O https://raw.githubusercontent.com/davidruvolo51/rprofile/main/.lintr
