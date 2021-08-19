@@ -45,3 +45,16 @@ Lastly, restore the renv and update packages accordingly.
 renv::restore()
 renv::update()
 ```
+
+### Alternatively, curl files.
+
+```zsh
+mkdir renv
+curl -O https://raw.githubusercontent.com/davidruvolo51/rprofile/main/.Rprofile
+curl -O https://raw.githubusercontent.com/davidruvolo51/rprofile/main/.lintr
+curl -O https://raw.githubusercontent.com/davidruvolo51/rprofile/main/renv.lock
+curl https://raw.githubusercontent.com/davidruvolo51/rprofile/main/renv/.gitignore -o renv/.gitignore
+curl https://raw.githubusercontent.com/davidruvolo51/rprofile/main/renv/activate.R -o renv/activate.R
+curl https://raw.githubusercontent.com/davidruvolo51/rprofile/main/renv/settings.dcf -o renv/settings.dcf
+```
+
